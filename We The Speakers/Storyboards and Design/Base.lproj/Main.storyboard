@@ -7,20 +7,155 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Launch View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="We_The_Speakers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LaunchViewController" customModule="We_The_Speakers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="rD3-ss-kx4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4T5-Hh-8Hk">
+                                <rect key="frame" x="14.5" y="673" width="385" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="Bee-09-mo5"/>
+                                    <constraint firstAttribute="width" constant="385" id="Qh4-q7-Bru"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="GetStarted">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rD3-ss-kx4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Fa9-Sx-OfP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4T5-Hh-8Hk" secondAttribute="bottom" constant="65" id="Z9n-fi-B3V"/>
+                            <constraint firstItem="rD3-ss-kx4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZXD-Ra-BsS"/>
+                            <constraint firstItem="rD3-ss-kx4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hab-91-pgO"/>
+                            <constraint firstItem="4T5-Hh-8Hk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lce-Dw-ebI"/>
+                            <constraint firstAttribute="bottom" secondItem="rD3-ss-kx4" secondAttribute="bottom" id="x6A-jb-Wjm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="119"/>
+            <point key="canvasLocation" x="-575.36231884057975" y="-208.25892857142856"/>
+        </scene>
+        <!--Tele Settings View Controller-->
+        <scene sceneID="4UY-Yd-aSi">
+            <objects>
+                <viewController id="9oT-7a-FG0" customClass="TeleSettingsViewController" customModule="We_The_Speakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rae-nT-b9N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundTeleSetting" translatesAutoresizingMaskIntoConstraints="NO" id="m6c-74-bfc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="m6c-74-bfc" firstAttribute="trailing" secondItem="eYL-XC-cah" secondAttribute="trailing" id="JDE-Tb-1YG"/>
+                            <constraint firstItem="m6c-74-bfc" firstAttribute="leading" secondItem="eYL-XC-cah" secondAttribute="leading" id="axb-5c-7Jv"/>
+                            <constraint firstAttribute="bottom" secondItem="m6c-74-bfc" secondAttribute="bottom" id="sws-G3-0oY"/>
+                            <constraint firstItem="m6c-74-bfc" firstAttribute="top" secondItem="Rae-nT-b9N" secondAttribute="top" id="wXE-nx-ws1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eYL-XC-cah"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bK9-YF-GLC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="-208"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="V8g-bn-zm0">
+            <objects>
+                <viewController id="uzZ-l9-yvy" customClass="MainViewController" customModule="We_The_Speakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fOO-SN-Glm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgoundTricks" translatesAutoresizingMaskIntoConstraints="NO" id="5RX-5B-ory">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5RX-5B-ory" firstAttribute="leading" secondItem="ljq-Nd-W5X" secondAttribute="leading" id="0DR-kk-5Mh"/>
+                            <constraint firstItem="5RX-5B-ory" firstAttribute="top" secondItem="fOO-SN-Glm" secondAttribute="top" id="4SB-Bf-fjB"/>
+                            <constraint firstAttribute="bottom" secondItem="5RX-5B-ory" secondAttribute="bottom" id="S2V-OE-otT"/>
+                            <constraint firstItem="5RX-5B-ory" firstAttribute="trailing" secondItem="ljq-Nd-W5X" secondAttribute="trailing" id="Xe2-Ds-suA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ljq-Nd-W5X"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SbF-GD-2SI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="-208"/>
+        </scene>
+        <!--Tele Cam View Controller-->
+        <scene sceneID="J1F-TV-RxA">
+            <objects>
+                <viewController id="dJp-nA-tQ3" customClass="TeleCamViewController" customModule="We_The_Speakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CfC-YJ-giC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TelepromptbackCam" translatesAutoresizingMaskIntoConstraints="NO" id="nHP-Ko-1eL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nHP-Ko-1eL" firstAttribute="top" secondItem="CfC-YJ-giC" secondAttribute="top" id="Opw-CG-Nxu"/>
+                            <constraint firstItem="nHP-Ko-1eL" firstAttribute="trailing" secondItem="p09-TD-5np" secondAttribute="trailing" id="k8r-tp-Txk"/>
+                            <constraint firstAttribute="bottom" secondItem="nHP-Ko-1eL" secondAttribute="bottom" id="nCc-OD-FyV"/>
+                            <constraint firstItem="nHP-Ko-1eL" firstAttribute="leading" secondItem="p09-TD-5np" secondAttribute="leading" id="uaC-WX-ezJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p09-TD-5np"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O66-UN-e9m" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835" y="-208"/>
+        </scene>
+        <!--Tele Cam View Controller-->
+        <scene sceneID="SRy-0A-vfO">
+            <objects>
+                <viewController id="egp-Yq-2rn" customClass="TeleCamViewController" customModule="We_The_Speakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kMq-z4-Lg0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ToneBackground" translatesAutoresizingMaskIntoConstraints="NO" id="LEN-JK-imG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LEN-JK-imG" firstAttribute="leading" secondItem="EH9-9p-YiQ" secondAttribute="leading" id="H3c-3g-raD"/>
+                            <constraint firstAttribute="bottom" secondItem="LEN-JK-imG" secondAttribute="bottom" id="W0O-RP-krL"/>
+                            <constraint firstItem="LEN-JK-imG" firstAttribute="trailing" secondItem="EH9-9p-YiQ" secondAttribute="trailing" id="bMK-lz-fZ6"/>
+                            <constraint firstItem="LEN-JK-imG" firstAttribute="top" secondItem="kMq-z4-Lg0" secondAttribute="top" id="jlb-4K-Fml"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EH9-9p-YiQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ldm-lu-BUg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2667" y="-208"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BackgoundTricks" width="1242" height="2688"/>
+        <image name="BackgroundTeleSetting" width="1242" height="2688"/>
+        <image name="GetStarted" width="1155" height="372"/>
+        <image name="MainBackground" width="1242" height="2688"/>
+        <image name="TelepromptbackCam" width="1242" height="2688"/>
+        <image name="ToneBackground" width="1242" height="2688"/>
+    </resources>
 </document>

@@ -13,6 +13,11 @@
 		6EA2FCBE253B865900566D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA2FCBD253B865900566D06 /* Assets.xcassets */; };
 		6EA2FCC1253B865900566D06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EA2FCBF253B865900566D06 /* LaunchScreen.storyboard */; };
 		6EA2FCCD253B871B00566D06 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA2FCCC253B871B00566D06 /* MainViewController.swift */; };
+		6EA2FCD0253B8BE600566D06 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA2FCCF253B8BE600566D06 /* LaunchViewController.swift */; };
+		6EA2FCD2253B8BF900566D06 /* TeleSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA2FCD1253B8BF900566D06 /* TeleSettingsViewController.swift */; };
+		6EA2FCD4253B8C0300566D06 /* TeleCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA2FCD3253B8C0300566D06 /* TeleCamViewController.swift */; };
+		6EA2FCD7253B8C5800566D06 /* ToneRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA2FCD6253B8C5800566D06 /* ToneRecordViewController.swift */; };
+		EA0712B3DC6586815A247A04 /* Pods_We_The_Speakers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBAC8FA18E12D6CBA8FD79E /* Pods_We_The_Speakers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,13 @@
 		6EA2FCC0253B865900566D06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EA2FCC2253B865900566D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EA2FCCC253B871B00566D06 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6EA2FCCF253B8BE600566D06 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		6EA2FCD1253B8BF900566D06 /* TeleSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleSettingsViewController.swift; sourceTree = "<group>"; };
+		6EA2FCD3253B8C0300566D06 /* TeleCamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleCamViewController.swift; sourceTree = "<group>"; };
+		6EA2FCD6253B8C5800566D06 /* ToneRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneRecordViewController.swift; sourceTree = "<group>"; };
+		C91E890D4C2C805DF9FC9AFE /* Pods-We The Speakers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-We The Speakers.release.xcconfig"; path = "Target Support Files/Pods-We The Speakers/Pods-We The Speakers.release.xcconfig"; sourceTree = "<group>"; };
+		DBD4166D2F130D722D9D1DDE /* Pods-We The Speakers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-We The Speakers.debug.xcconfig"; path = "Target Support Files/Pods-We The Speakers/Pods-We The Speakers.debug.xcconfig"; sourceTree = "<group>"; };
+		EDBAC8FA18E12D6CBA8FD79E /* Pods_We_The_Speakers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_We_The_Speakers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0712B3DC6586815A247A04 /* Pods_We_The_Speakers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				6EA2FCB3253B865600566D06 /* We The Speakers */,
 				6EA2FCB2253B865600566D06 /* Products */,
+				F3C61BA1AF2EDA4D9647FDB0 /* Pods */,
+				7C4021DFBAD6AC35C3BF8117 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,7 +82,10 @@
 		6EA2FCC8253B86D500566D06 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6EA2FCCF253B8BE600566D06 /* LaunchViewController.swift */,
 				6EA2FCCC253B871B00566D06 /* MainViewController.swift */,
+				6EA2FCD5253B8C3D00566D06 /* Tone */,
+				6EA2FCCE253B8BC400566D06 /* Teleprompt */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -91,6 +109,41 @@
 			path = "Storyboards and Design";
 			sourceTree = "<group>";
 		};
+		6EA2FCCE253B8BC400566D06 /* Teleprompt */ = {
+			isa = PBXGroup;
+			children = (
+				6EA2FCD1253B8BF900566D06 /* TeleSettingsViewController.swift */,
+				6EA2FCD3253B8C0300566D06 /* TeleCamViewController.swift */,
+			);
+			path = Teleprompt;
+			sourceTree = "<group>";
+		};
+		6EA2FCD5253B8C3D00566D06 /* Tone */ = {
+			isa = PBXGroup;
+			children = (
+				6EA2FCD6253B8C5800566D06 /* ToneRecordViewController.swift */,
+			);
+			path = Tone;
+			sourceTree = "<group>";
+		};
+		7C4021DFBAD6AC35C3BF8117 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDBAC8FA18E12D6CBA8FD79E /* Pods_We_The_Speakers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3C61BA1AF2EDA4D9647FDB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBD4166D2F130D722D9D1DDE /* Pods-We The Speakers.debug.xcconfig */,
+				C91E890D4C2C805DF9FC9AFE /* Pods-We The Speakers.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EA2FCC5253B865900566D06 /* Build configuration list for PBXNativeTarget "We The Speakers" */;
 			buildPhases = (
+				05AD4E84F89D684A91552E93 /* [CP] Check Pods Manifest.lock */,
 				6EA2FCAD253B865600566D06 /* Sources */,
 				6EA2FCAE253B865600566D06 /* Frameworks */,
 				6EA2FCAF253B865600566D06 /* Resources */,
+				1B8FC00A202E0EAD4F7B413F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,14 +212,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05AD4E84F89D684A91552E93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-We The Speakers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B8FC00A202E0EAD4F7B413F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-We The Speakers/Pods-We The Speakers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-We The Speakers/Pods-We The Speakers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-We The Speakers/Pods-We The Speakers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6EA2FCAD253B865600566D06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EA2FCD2253B8BF900566D06 /* TeleSettingsViewController.swift in Sources */,
 				6EA2FCCD253B871B00566D06 /* MainViewController.swift in Sources */,
+				6EA2FCD7253B8C5800566D06 /* ToneRecordViewController.swift in Sources */,
+				6EA2FCD4253B8C0300566D06 /* TeleCamViewController.swift in Sources */,
 				6EA2FCB5253B865600566D06 /* AppDelegate.swift in Sources */,
 				6EA2FCB7253B865600566D06 /* SceneDelegate.swift in Sources */,
+				6EA2FCD0253B8BE600566D06 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +407,7 @@
 		};
 		6EA2FCC6253B865900566D06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD4166D2F130D722D9D1DDE /* Pods-We The Speakers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -324,6 +426,7 @@
 		};
 		6EA2FCC7253B865900566D06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91E890D4C2C805DF9FC9AFE /* Pods-We The Speakers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
