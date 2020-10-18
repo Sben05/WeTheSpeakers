@@ -82,11 +82,11 @@ class TeleSettingsViewController: UIViewController, UITextViewDelegate {
         self.text = textView.text
         switch camSwitch.selectedSegmentIndex {
         case 0:
-            performSegue(withIdentifier: "camSeg", sender: self)
+            performSegue(withIdentifier: "CamSeg", sender: self)
         case 1:
             performSegue(withIdentifier: "ncamSeg", sender: self)
         default:
-            performSegue(withIdentifier: "camSeg", sender: self)
+            performSegue(withIdentifier: "CamSeg", sender: self)
             
             
         }
@@ -96,7 +96,7 @@ class TeleSettingsViewController: UIViewController, UITextViewDelegate {
         case 0:
             let vc = segue.destination as! CameraViewController
             vc.content = self.text
-            vc.numIn = self.num
+           // vc.numIn = self.num
         case 1:
             let vc = segue.destination as! NonCameraViewController
             vc.secondContent = self.text
@@ -104,8 +104,8 @@ class TeleSettingsViewController: UIViewController, UITextViewDelegate {
         default:
             let vc = segue.destination as! CameraViewController
             vc.content = self.text
-            vc.numIn = self.num
-            
+            //vc.numIn = self.num
+
         }
     }
     

@@ -7,4 +7,5 @@ target 'We The Speakers' do
 
   # Pods for We The Speakers
 pod ‘SideMenu’
+pod 'SwiftyCam'
 end

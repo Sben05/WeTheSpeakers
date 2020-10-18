@@ -1,16 +1,20 @@
 PODS:
   - SideMenu (6.4.9)
+  - SwiftyCam (4.0.0)
 
 DEPENDENCIES:
   - SideMenu
+  - SwiftyCam
 
 SPEC REPOS:
   trunk:
     - SideMenu
+    - SwiftyCam
 
 SPEC CHECKSUMS:
   SideMenu: 8ef57a3cfc024a2d3fc1c036c7fe98537baec9e0
+  SwiftyCam: 6e57914771d972fbe508e759dc9d0150a44a93fd
 
-PODFILE CHECKSUM: 928c0fec272fcba5d3962dc37cf6528ead0e5b82
+PODFILE CHECKSUM: b33024a2ad36ec062751ef1506c4c4defa2b81a3
 
 COCOAPODS: 1.9.3
