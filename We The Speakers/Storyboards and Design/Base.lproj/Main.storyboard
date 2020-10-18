@@ -263,6 +263,32 @@
                                             <segue destination="egp-Yq-2rn" kind="presentation" modalPresentationStyle="fullScreen" id="PMU-k1-4WV"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Igo-Ra-EaG">
+                                        <rect key="frame" x="0.0" y="158.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Igo-Ra-EaG" id="QYX-6j-w6Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Augumented Reality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hj6-Bt-4bj">
+                                                    <rect key="frame" x="45" y="11" width="153.5" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="hj6-Bt-4bj" firstAttribute="leading" secondItem="QYX-6j-w6Y" secondAttribute="leadingMargin" constant="25" id="Wst-FH-mUQ"/>
+                                                <constraint firstItem="hj6-Bt-4bj" firstAttribute="top" secondItem="QYX-6j-w6Y" secondAttribute="topMargin" id="lXS-4R-rDp"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hj6-Bt-4bj" secondAttribute="trailing" constant="20" symbolic="YES" id="s3s-mc-0RD"/>
+                                                <constraint firstItem="hj6-Bt-4bj" firstAttribute="centerY" secondItem="QYX-6j-w6Y" secondAttribute="centerY" id="yil-bo-n1p"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PTy-20-E9R" kind="presentation" modalPresentationStyle="fullScreen" id="Jtr-v0-Hii"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -309,6 +335,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOZ-xj-KQu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-593" y="-205"/>
+        </scene>
+        <!--Echo View Controller-->
+        <scene sceneID="OQe-3s-f6Y">
+            <objects>
+                <viewController id="PTy-20-E9R" customClass="EchoViewController" customModule="We_The_Speakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xds-rc-nz0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osh-eZ-83t">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jm-DX-6LV">
+                                <rect key="frame" x="20" y="49" width="21" height="18"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="line.horizontal.3" catalog="system"/>
+                                <connections>
+                                    <segue destination="pnO-e3-Ucu" kind="presentation" id="qQs-kR-P0h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="osh-eZ-83t" firstAttribute="leading" secondItem="NJP-qa-6Fv" secondAttribute="leading" id="9RK-1P-z6E"/>
+                            <constraint firstItem="3Jm-DX-6LV" firstAttribute="leading" secondItem="NJP-qa-6Fv" secondAttribute="leading" constant="20" id="F6x-pc-SRW"/>
+                            <constraint firstItem="3Jm-DX-6LV" firstAttribute="top" secondItem="NJP-qa-6Fv" secondAttribute="top" id="Jfw-PX-gU8"/>
+                            <constraint firstAttribute="bottom" secondItem="osh-eZ-83t" secondAttribute="bottom" id="ViY-sy-bTR"/>
+                            <constraint firstItem="osh-eZ-83t" firstAttribute="top" secondItem="xds-rc-nz0" secondAttribute="top" id="a7x-mg-4N5"/>
+                            <constraint firstItem="osh-eZ-83t" firstAttribute="trailing" secondItem="NJP-qa-6Fv" secondAttribute="trailing" id="nfW-qD-I6A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NJP-qa-6Fv"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="osh-eZ-83t" id="iQz-8n-jUb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8a-KQ-TLK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2105.7971014492755" y="551.11607142857144"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="V8g-bn-zm0">
@@ -480,6 +545,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oz-4r-oxk">
+                                <rect key="frame" x="353" y="44" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <segue destination="uzZ-l9-yvy" kind="presentation" modalPresentationStyle="fullScreen" id="Z0H-za-rAP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -613,8 +686,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iYY-6d-SBD"/>
-        <segue reference="Jta-83-lt7"/>
+        <segue reference="Jtr-v0-Hii"/>
+        <segue reference="zxm-81-fQD"/>
+        <segue reference="qQs-kR-P0h"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BackgoundTricks" width="1242" height="2688"/>
