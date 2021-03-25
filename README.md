@@ -1,6 +1,6 @@
 # WeTheSpeakers
 
-##**UPDATE: WON THE CONGRESSIONAL APP CHALLENGE!!!**
+## **UPDATE: WON THE CONGRESSIONAL APP CHALLENGE!!!**
 Read more about it [here](https://www.congressionalappchallenge.us/20-pa06/).
 
 ## Inspiration
