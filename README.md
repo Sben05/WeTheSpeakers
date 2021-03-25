@@ -1,6 +1,10 @@
 # WeTheSpeakers
+
+##**UPDATE: WON THE CONGRESSIONAL APP CHALLENGE!!!**
+Read more about it [here](https://www.congressionalappchallenge.us/20-pa06/).
+
 ## Inspiration
-Hi! My name is Shreeniket, and I am a 15-year-old who loves programming and public speaking. I decided to combine these two passions into a single iOS application, and here is the result! We The Speakers was created due to my love of public speaking :).
+Hi! My name is Shreeniket, and I am a 15-year-old who loves programming and public speaking. I decided to combine these two passions into a single iOS application, and here is the result! We The Speakers was created due )o my love of public speaking :).
 
 ## What it does
 We The Speakers has 4 major components. First, it has a tips page where users can learn public speaking and improve their skills. Then, there is a teleprompter feature to record themselves speaking, with a scrolling view. The recorded video is then saved in the users camera roll on their phone. Next, there is a natural language processor used on a speech to analyze how good the user's writing is. Finally, I use the Echo AR SDK to create a NLP virtual microphone.
