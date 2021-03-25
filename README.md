@@ -1,9 +1,6 @@
 # WeTheSpeakers
 ## Inspiration
-Hi! My name is Shreeniket, and I am a 14-year-old who loves programming and public speaking. I decided to combine these two passions into a single iOS application, and here is the result! We The Speakers was submitted to the DubHacks hackathon :).
-
-## The Newsprint Track
-I submitted to the Newsprint track as I believed this project has a lot of potential for helping the public and social good in general. Furthermore, through better speaking skills, individuals can develop more meaningful connections to other people, which was one of the guidelines of the track. This app also falls under education, public policy, communication, and productivity, which are all additional aspects of the track. 
+Hi! My name is Shreeniket, and I am a 15-year-old who loves programming and public speaking. I decided to combine these two passions into a single iOS application, and here is the result! We The Speakers was created due to my love of public speaking :).
 
 ## What it does
 We The Speakers has 4 major components. First, it has a tips page where users can learn public speaking and improve their skills. Then, there is a teleprompter feature to record themselves speaking, with a scrolling view. The recorded video is then saved in the users camera roll on their phone. Next, there is a natural language processor used on a speech to analyze how good the user's writing is. Finally, I use the Echo AR SDK to create a NLP virtual microphone.
